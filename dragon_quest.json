@@ -1,0 +1,65 @@
+{
+  "monsters": [
+            {
+                "info" : {
+                  "name": "Slime",
+                  "description": "The slime is a recurring monster in the Dragon Quest series. Introduced in the original Dragon Quest, slimes have since become the series' mascot due to their popularity and iconic qualities. The basic slime has been in every Dragon Quest game to date"
+                },
+                "graphics": {
+                  "fileName": "Slime.png",
+                  "url": "https://dragon-quest.org/images/9/93/DQ_Slime.png"
+                },
+                "stats": {
+                  "HP": "3",
+                  "MP":	"0",
+                  "Experience": "1",
+                  "Gold": "1",
+                  "Attack": "5",
+                  "Defense": "3",
+                  "Agility": "2"
+                }
+            },
+
+            {
+                "info" : {
+                  "name": "Slime",
+                  "description": "The slime is a recurring monster in the Dragon Quest series. Introduced in the original Dragon Quest, slimes have since become the series' mascot due to their popularity and iconic qualities. The basic slime has been in every Dragon Quest game to date"
+                },
+                "graphics": {
+                  "fileName": "Slime.png",
+                  "url": "https://dragon-quest.org/images/9/93/DQ_Slime.png"
+                },
+                "stats": {
+                  "HP": "3",
+                  "MP":	"0",
+                  "Experience": "1",
+                  "Gold": "1",
+                  "Attack": "5",
+                  "Defense": "3",
+                  "Agility": "2"
+                }
+            },
+
+            {
+                "info" : {
+                  "name": "Slime",
+                  "description": "The slime is a recurring monster in the Dragon Quest series. Introduced in the original Dragon Quest, slimes have since become the series' mascot due to their popularity and iconic qualities. The basic slime has been in every Dragon Quest game to date"
+                },
+                "graphics": {
+                  "fileName": "Slime.png",
+                  "url": "https://dragon-quest.org/images/9/93/DQ_Slime.png"
+                },
+                "stats": {
+                  "HP": "3",
+                  "MP":	"0",
+                  "Experience": "1",
+                  "Gold": "1",
+                  "Attack": "5",
+                  "Defense": "3",
+                  "Agility": "2"
+                }
+            }
+
+
+          ]
+        }

@@ -44,11 +44,9 @@ function draw() {
 
   //FOR CHE SERVE A DISEGNARE EFFETIVAMENTE I MOSTRI
   for(var i=0; i<monsterPartySize; i++){
-    monsterParty[i].x=50+400*i;
-    monsterParty[i].y=50;
     monsterParty[i].display();
     //CONTROLLO SE IL MOUSE È SU UN MOSTRO
-    monsterParty[i].checkMouseOver();
+    checkMouseOver(monsterParty[i], i);
   }
 }
 
@@ -59,8 +57,8 @@ function Monster(partyIndex, dataIndex) {
   var currentHp;
 
   this.display = function() {
-    //this.x=50;
-    //this.y=50
+    this.x=50;
+    this.y=50
     image(img, this.x, this.y);
 
     push();
@@ -68,21 +66,27 @@ function Monster(partyIndex, dataIndex) {
     text(monsterData.monsters[dIndex].info.name, this.x, this.y + 400); //da vedere con altezza img
     pop();
   }
-  this.checkMouseOver = function() {
-    //PINDEX MI SERVE PER ACCEDERE ALL'ARRAY DELLE GRAFICHE CHE È PARALLELO A QUELLO DEI MOSTRI DISEGNATI
-    if(mouseX>this.x &&
-      mouseX<this.x+partyGraphic[pIndex].width &&
-      mouseY>this.y &&
-      mouseY<this.y+partyGraphic[pIndex].height) {
-
-        fill(0,0,0);
-        var statWindowY=this.y+450;
-        push();
-        rect(this.x, statWindowY, 400, 200);
-        textSize(50);
-        fill(255);
-        text('HP: ' + monsterData.monsters[dIndex].stats.HP, this.x+20, statWindowY+20);
-        pop();
-      }
-    }
 }
+function statWindow(x, y, w) {
+
+  fill(0,0,0);
+  rect(x, y, w, 500);
+
+}
+function checkMouseOver(monster, pIndex, dIndex) {
+  //PINDEX MI SERVE PER ACCEDERE ALL'ARRAY DELLE GRAFICHE CHE È PARALLELO A QUELLO DEI MOSTRI DISEGNATI
+  if(mouseX>monster.x &&
+    mouseX<monster.x+partyGraphic[pIndex].width &&
+    mouseY>monster.y &&
+    mouseY<monster.y+partyGraphic[pIndex].height) {
+
+      fill(0,0,0);
+      var statWindowY=monster.y+450;
+      push();
+      rect(monster.x, statWindowY, 400, 200);
+      textSize(50);
+      fill(255);
+      text('HP: ' + monsterData.monsters[0].stats.HP, monster.x+20, statWindowY+20);
+      pop();
+    }
+  }

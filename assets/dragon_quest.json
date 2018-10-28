@@ -22,41 +22,125 @@
 
             {
                 "info" : {
-                  "name": "Slime",
-                  "description": "The slime is a recurring monster in the Dragon Quest series. Introduced in the original Dragon Quest, slimes have since become the series' mascot due to their popularity and iconic qualities. The basic slime has been in every Dragon Quest game to date"
+                  "firstname": "Rockin'",
+                  "name": "rockhopper",
+                  "description": "The Rockin' rockhopper is a dark blue penguin monster. It has a funky blue mohawk. But its most unsettling feature is the markings on its belly. It looks like a mouth and face"
                 },
                 "graphics": {
-                  "fileName": "Slime.png",
-                  "url": "https://dragon-quest.org/images/9/93/DQ_Slime.png"
+                  "fileName": "CragDevil.png",
+                  "url": "https://dragon-quest.org/images/7/7e/DQVII_CragDevil.png"
                 },
                 "stats": {
-                  "HP": "3",
-                  "MP":	"0",
-                  "Experience": "1",
-                  "Gold": "1",
-                  "Attack": "5",
-                  "Defense": "3",
-                  "Agility": "2"
+                  "HP": "230",
+                  "MP":	"16",
+                  "Experience": "130",
+                  "Gold": "92",
+                  "Attack": "135",
+                  "Defense": "103",
+                  "Agility": "92"
                 }
             },
 
             {
                 "info" : {
-                  "name": "Slime",
-                  "description": "The slime is a recurring monster in the Dragon Quest series. Introduced in the original Dragon Quest, slimes have since become the series' mascot due to their popularity and iconic qualities. The basic slime has been in every Dragon Quest game to date"
+                  "name": "Chimaera",
+                  "description": "The standard chimaera has what appears to be a vulture's head with a ring of downy feathers around its neck. Its body is serpentine but also somewhat bloated, making it look more grub-like than snake-like. Its wings are feathered and constantly beat to keep the creature airborne"
                 },
                 "graphics": {
-                  "fileName": "Slime.png",
-                  "url": "https://dragon-quest.org/images/9/93/DQ_Slime.png"
+                  "fileName": "Chimaera.png",
+                  "url": "https://dragon-quest.org/images/e/ee/DQ_Chimaera.png"
                 },
                 "stats": {
-                  "HP": "3",
+                  "HP": "42",
+                  "MP":	"?",
+                  "Experience": "24",
+                  "Gold": "99",
+                  "Attack": "56",
+                  "Defense": "48",
+                  "Agility": "48"
+                }
+            },
+
+            {
+                "info" : {
+                  "firstname": "Blistering",
+                  "name": "bloater",
+                  "description": "The Blistering bloater (formerly FlameToad) is a monster in the game Dragon Quest VII. It can be found in the Demon Lord's Lair and the Loomin region in Disc 2"
+                },
+                "graphics": {
+                  "fileName": "flameToad.png",
+                  "url": "https://dragon-quest.org/images/9/9b/DQVII_FlameToad.png"
+                },
+                "stats": {
+                  "HP": "155",
                   "MP":	"0",
-                  "Experience": "1",
-                  "Gold": "1",
-                  "Attack": "5",
-                  "Defense": "3",
-                  "Agility": "2"
+                  "Experience": "85",
+                  "Gold": "42",
+                  "Attack": "95",
+                  "Defense": "87",
+                  "Agility": "67"
+                }
+            },
+
+            {
+                "info" : {
+                  "firstname": "Iron",
+                  "name": "tortoise",
+                  "description": "Iron tortoises are big tortoise-like monsters with orange and brown scaly skin and covered with armor pieces"
+                },
+                "graphics": {
+                  "fileName": "Iron_tortoise.png",
+                  "url": "https://dragon-quest.org/images/7/71/DQVIDS_Iron_tortoise_artwork.png"
+                },
+                "stats": {
+                  "HP": "328",
+                  "MP":	"30",
+                  "Experience": "504",
+                  "Gold": "82",
+                  "Attack": "225",
+                  "Defense": "300",
+                  "Agility": "60"
+                }
+            },
+
+            {
+                "info" : {
+                  "name": "Terrorhawk",
+                  "description": "A terrorhawk is a brownish-bodied bird with a human-like build, not nearly as vibrant but all the same similar to the prism peacock"
+                },
+                "graphics": {
+                  "fileName": "terrorhawk.png",
+                  "url": "https://dragon-quest.org/images/b/bb/DQVII_Terrorhawk.png"
+                },
+                "stats": {
+                  "HP": "310",
+                  "MP":	"30",
+                  "Experience": "170",
+                  "Gold": "100",
+                  "Attack": "145",
+                  "Defense": "99",
+                  "Agility": "105"
+                }
+            },
+
+            {
+                "info" : {
+                  "firstname": "Stone",
+                  "name": "golem",
+                  "description": "The stone golem is a golem constructed of stone blocks instead of clay bricks"
+                },
+                "graphics": {
+                  "fileName": "stone_Golem.png",
+                  "url": "https://dragon-quest.org/images/a/a6/DQ_Stone_Golem.png"
+                },
+                "stats": {
+                  "HP": "160",
+                  "MP":	"0",
+                  "Experience": "65",
+                  "Gold": "140",
+                  "Attack": "100",
+                  "Defense": "40",
+                  "Agility": "40"
                 }
             }
 

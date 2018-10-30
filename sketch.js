@@ -12,6 +12,7 @@ var partyGraphic = [];
 
 var selecting = false;
 var target;
+var fumetto;
 
 
 
@@ -33,11 +34,16 @@ function setup() {
     //MONSTERPARTY SONO I MOSTRI CHE VISUALIZZO
     var m = new Monster(i, enemyIndex);
     monsterParty.push(m);
+    fumetto=loadImage("./assets/fumetto.png");
+    titolo=loadImage("./assets/Dragon_Quest_logo.png");
   }
 }
 
 function draw() {
   image(wallpaper, 0, 0);
+  push();
+  image(titolo, width/2-250, 10);
+  pop();
   textFont("Prosto One");
   //monsterParty[0].x = 550;
   //monsterParty[0].y = 550;
@@ -90,6 +96,7 @@ function Monster(partyIndex, dataIndex) {
         strokeWeight(3);
         rect(this.x, statWindowY, 325, 135);
         pop();
+
         push();
         textSize(20);
         fill(255);
@@ -101,6 +108,36 @@ function Monster(partyIndex, dataIndex) {
         text('Attack: ' + monsterData.monsters[dIndex].stats.Attack, this.x+20, statWindowY+75);
         text('Defense: ' + monsterData.monsters[dIndex].stats.Defense, this.x+170, statWindowY+75);
         pop();
+
+        push();
+        image(fumetto, this.x+50, this.y-100);
+        pop();
       }
     }
-}
+
+    this.clicked= function() {
+
+      if(mouseX>this.x &&
+        mouseX<this.x+partyGraphic[pIndex].width &&
+        mouseY>this.y &&
+        mouseY<this.y+partyGraphic[pIndex].height) {
+          console.log('ciao ho cliccatoo');
+          console.log(pIndex);
+          dIndex=floor(random(0, monsterData.monsters.length-0.1));
+          partyGraphic[pIndex]=loadImage(assetPath + monsterData.monsters[dIndex].graphics.fileName);
+          img=partyGraphic[pIndex];
+
+        }
+      }
+
+
+
+
+    }
+
+    function mouseClicked() {
+      for (var i = 0; i < monsterParty.length; i++) {
+        var m = monsterParty[i];
+        m.clicked();
+      }
+    }
